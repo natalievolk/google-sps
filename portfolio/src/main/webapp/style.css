@@ -7,3 +7,9 @@
 #greeting-container {
   margin-top: 20px;
 }
+
+#image img {
+    margin: 10px;
+    height: 10px;
+    width: 10px;
+}
