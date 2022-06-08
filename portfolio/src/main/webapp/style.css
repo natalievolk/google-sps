@@ -5,35 +5,50 @@
 }
 
 #greeting-container {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 img {
-    margin: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#profile-photo img {
+    margin-left: 5%;
+    margin-right: 0%;
+    margin-top: 0px;
+    float: right;
+    padding: 0%;
     width: auto;
     height: 200px;
 }
 
-#profile-photo img {
-    margin-left: 0%;
-    margin-right: 2%;
-    float: left;
-    
-    /*display: block;
+#hometown-pics img {
+    display: inline-block;
     margin-left: auto;
-    margin-right: auto;*/
+    margin-right: auto;
+    width: auto;
+    height: 200px;
+    
 }
 
-#intro {
-    width:100%;
-    height:auto;
-    padding:1%;
+#hometown-pics {
+    text-align: center;
+}
+
+#intro-section {
+    width: 100%;
+    height: auto;
+    padding: 0%;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 #fun-fact {
     width: 100%;
-    margin-left: auto;
+    margin-left: 0%;
     margin-right: auto;
+    margin-top: 10px;
 }
 
 /*

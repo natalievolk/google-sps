@@ -20,7 +20,8 @@ function addRandomGreeting() {
       ['I\'ve met 10 Olympic medallists! (all figure skaters)', 
       'I got into running at the beginning of covid, and my goal for this summer is to run a half marathon.', 
       'I love dark chocolate!', 
-      'I really enjoy going to parks and swinging :)'];
+      'I really enjoy going to parks and swinging :)',
+      'I\'m a middle child (I have a younger brother and an older sister).'];
 
   // Pick a random greeting.
   const greeting = greetings[Math.floor(Math.random() * greetings.length)];
