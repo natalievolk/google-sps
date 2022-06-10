@@ -13,20 +13,20 @@
 // limitations under the License.
 
 /**
- * Adds a random greeting to the page.
+ * Adds a random fun fact to the page.
  */
-function addRandomGreeting() {
-  const greetings =
+function addRandomFunFact() {
+  const funFacts =
       ['I\'ve met 10 Olympic medallists! (all figure skaters)', 
       'I got into running at the beginning of covid, and my goal for this summer is to run a half marathon.', 
       'I love dark chocolate!', 
       'I really enjoy going to parks and swinging :)',
       'I\'m a middle child (I have a younger brother and an older sister).'];
 
-  // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
+  // Pick a random fun fact.
+  const funFact = funFacts[Math.floor(Math.random() * funFacts.length)];
 
   // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
+  const funFactContainer = document.getElementById('fun-fact-container');
+  funFactContainer.innerText = funFact;
 }
