@@ -36,8 +36,13 @@ function addRandomFunFact() {
  */
 async function showServerMessage() {
     const responseFromServer = await fetch('/welcome');
-    const welcomeMessage = await responseFromServer.text();
+    const messageJson = await responseFromServer.json();
+
+    console.log(messageJson);
+
+    // Pick a random message.
+    const message = messageJson[Math.floor(Math.random() * messageJson.length)];
 
     const welcomeContainer = document.getElementById('welcome-message');
-    welcomeContainer.innerText = welcomeMessage;
+    welcomeContainer.innerText = message;
 }
