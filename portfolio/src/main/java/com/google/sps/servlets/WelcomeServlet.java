@@ -22,7 +22,6 @@ public class WelcomeServlet extends HttpServlet {
     String json = convertToJsonUsingGson(messages);
 
     response.setContentType("text/html;");
-    //response.getWriter().println("<h1>Hello everyone!</h1>");
     response.getWriter().println(json);
   }
 
