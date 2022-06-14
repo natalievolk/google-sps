@@ -4,6 +4,20 @@
   width: 650px;
 }
 
+.title {
+    text-align: center;
+}
+
+#navigation-bar {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#navigation-bar a {
+    padding: 10px;
+}
+
 #fun-fact-container {
   margin-top: 10px;
 }
