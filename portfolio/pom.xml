@@ -46,6 +46,7 @@
         <version>2.8.6</version>
     </dependency>
 
+    <!-- Google Cloud Storage-->
     <dependency>
         <groupId>com.google.cloud</groupId>
         <artifactId>google-cloud-storage</artifactId>
