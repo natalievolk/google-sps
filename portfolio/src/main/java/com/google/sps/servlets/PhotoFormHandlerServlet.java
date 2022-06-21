@@ -33,7 +33,10 @@ public class PhotoFormHandlerServlet extends HttpServlet {
 
     // Get the file chosen by the user.
     Part filePart = request.getPart("image");
-    String fileName = filePart.getSubmittedFileName() + System.currentTimeMillis();
+    String fileName = filePart.getSubmittedFileName();
+    String fileDesc = fileName.split("[.]")[0];
+    String fileExt = fileName.split("[.]")[1];
+    fileName = fileDesc + System.currentTimeMillis() + fileExt;
     InputStream fileInputStream = filePart.getInputStream();
 
     // Upload the file and get its URL
@@ -54,8 +57,7 @@ public class PhotoFormHandlerServlet extends HttpServlet {
   private static String uploadToCloudStorage(String fileName, InputStream fileInputStream) {
     String projectId = "nvolk-sps-summer22";
     String bucketName = "nvolk-sps-summer22.appspot.com";
-    Storage storage =
-        StorageOptions.newBuilder().setProjectId(projectId).build().getService();
+    Storage storage = StorageOptions.newBuilder().setProjectId(projectId).build().getService();
     BlobId blobId = BlobId.of(bucketName, fileName);
     BlobInfo blobInfo = BlobInfo.newBuilder(blobId).build();
 
