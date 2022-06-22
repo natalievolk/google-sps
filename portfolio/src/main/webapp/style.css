@@ -78,3 +78,8 @@ img {
     margin-right: auto;
     margin-top: 10px;
 }
+
+#contact-info a {
+    margin-left: 10px;
+    color: white;
+}
