@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  
   <head>
     <meta charset="UTF-8">
     <title>My Portfolio</title>
@@ -10,9 +13,9 @@
     <div id="content">
         <h1 id="title">Sandbox</h1>
         <div id="navigation-bar">
-            <a href='/'>About</a>
-            <a href='/contact-me.html'>Contact Me</a>
-            <a href='/misc.html'>Sandbox</a>
+            <a class="btn btn-outline-info" href='/' role='button'>About</a>
+            <a class="btn btn-outline-info" href='/contact-me.html' role='button'>Contact Me</a>
+            <a class="btn btn-outline-info" href='/misc.html' role='button'>Sandbox</a>
         </div>
         <p>Click <a href="/welcome">here</a> to see content created by server code.</p>
       <div id="fun-fact">
@@ -28,6 +31,17 @@
             <p><br>  </p>
           </div>
       </div>
+    
+      <form action="/upload" method="POST" enctype="multipart/form-data">
+        <p>Feel free to let me know your thoughts:</p>
+        <textarea name="message"></textarea>
+        <br/>
+        <p>Or share an image:</p>
+        <input type="file" name="image">
+        <br/><br/>
+        <button>Submit</button>
+      </form>
+      
     </div>
   </body>
 </html>
