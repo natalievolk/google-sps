@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="content">
+        <h1 id="title">Sandbox</h1>
+        <div id="navigation-bar">
+            <a href='/'>About</a>
+            <a href='/contact-me.html'>Contact Me</a>
+            <a href='/misc.html'>Sandbox</a>
+        </div>
+        <p>Click <a href="/welcome">here</a> to see content created by server code.</p>
+      <div id="fun-fact">
+        <p>Click here to find a random fun fact about myself:</p>
+        <button onclick="addRandomFunFact()">Fun Facts</button>
+      </div>
+      <div id="fun-fact-container">
+          <p><br>  </p>
+      </div>
+      <div id="welcome-container">
+          <button onclick="showServerMessage()">Welcome Message</button>
+          <div id="welcome-message">
+            <p><br>  </p>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
